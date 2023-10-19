@@ -4,8 +4,10 @@ stm32cube_programmer_filepath := $(stm32cube_programmer_path)/$(stm32cube_progra
 stm32cube_loader_relative_path := ExternalLoader/$(stldr)
 stm32cube_loader := $(stm32cube_programmer_path)/$(stm32cube_loader_relative_path)
 
-program_files_win32 = /c/Program Files (x86)
-program_files_win64 = /c/Program Files
+# program_files_win32 = /c/Program Files (x86)
+# program_files_win64 = /c/Program Files
+program_files_win64 = /d/
+program_files_win32 = /d/
 program_files_CLT = /c/ST/STM32CubeCLT/STM32CubeCLT/
 
 # Check which tools are installed
