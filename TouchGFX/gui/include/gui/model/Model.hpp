@@ -14,8 +14,14 @@ public:
     }
 
     void tick();
+
+    void up();
+    void down();
+    int get();
 protected:
     ModelListener* modelListener;
+
+    int count = 0;
 };
 
 #endif // MODEL_HPP

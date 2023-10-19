@@ -27,6 +27,10 @@ public:
 
     virtual ~Screen1Presenter() {}
 
+    
+    void up();
+    void down();
+    int get();
 private:
     Screen1Presenter();
 

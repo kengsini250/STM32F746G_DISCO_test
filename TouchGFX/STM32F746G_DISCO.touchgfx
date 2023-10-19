@@ -3,8 +3,76 @@
     "Screens": [
       {
         "Name": "Screen1",
-        "Components": [],
-        "Interactions": []
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "b.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 98,
+            "Y": 167,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_rounded_action.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_rounded_action.json"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 257,
+            "Y": 167,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_rounded_action.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_rounded_action.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 157,
+            "Y": 75,
+            "Width": 137,
+            "Height": 48,
+            "TextId": "__SingleUse_JI89",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_HGV0",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "functionUP",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionUP"
+            }
+          },
+          {
+            "InteractionName": "functionDOWN",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionDOWN"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],

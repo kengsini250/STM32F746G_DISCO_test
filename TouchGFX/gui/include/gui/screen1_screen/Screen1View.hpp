@@ -11,6 +11,10 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    virtual void functionUP() override;
+    virtual void functionDOWN() override;
+    void get();
 protected:
 };
 

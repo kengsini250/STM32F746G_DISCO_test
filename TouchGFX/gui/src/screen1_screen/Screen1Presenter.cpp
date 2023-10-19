@@ -16,3 +16,19 @@ void Screen1Presenter::deactivate()
 {
 
 }
+
+void Screen1Presenter::up()
+{
+    model->up();
+}
+
+void Screen1Presenter::down()
+{
+    model->down();
+}
+
+int Screen1Presenter::get()
+{
+    return model->get();
+}
+
